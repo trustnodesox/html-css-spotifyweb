@@ -34,16 +34,19 @@ footer{
 
 }
 
-#content{
+#box{
   height: calc(100% - 100px);
   width: 80%;
-  display: inline-block;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
 
 }
 
-.prova{
+.content{
   background-color: black;
   height: 100px;
   width: 100px;
-  display: inline-block;
+  display: flex;
 }
