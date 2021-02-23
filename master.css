@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
+.container{
+  margin: 0 2% auto;
+}
 
 header{
-  background-color: red;
+  background-color: #080B12;
   height: 100px;
-  width: calc(100% - 180px);
+  width: calc(100% - 200px);
   position: absolute;
-  left: 180px;
+  left: 200px;
   top: 0;
   display: flex;
   flex-direction: row-reverse;
@@ -18,20 +21,30 @@ header{
 }
 
 .my-btn{
+  color: white;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 10px;
   height: 40px;
   margin-top: 28px;
   margin-right: 5px;
   border-radius: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #080B12;
+  border: 1px solid white;
+}
+
+.my-btn:focus{
+  outline: none;
+  background-color: white;
+  color: #080B12;
 }
 
 aside{
   background-color: black;
   height: calc(100% - 100px);
-  width: 180px;
+  width: 200px;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,6 +90,7 @@ a:hover{
 
 a{
   color: darkgrey;
+  text-decoration: none;
 }
 
 aside hr{
@@ -90,19 +104,20 @@ aside hr{
 }
 
 main{
-  background-color: green;
-  height: calc(100% - 100px);
-  width: calc(100% - 180px);
+  background-color: #141922;
+  height: calc(100% - 200px);
+  width: calc(100% - 200px);
   position: absolute;
-  left: 180px;
+  left: 200px;
   top: 100px;
+  bottom: 100px;
   overflow-y: scroll;
 }
 
 footer{
   height: 100px;
   width: 100%;
-  background-color: blue;
+  background-color: #282828;
   position: fixed;
   bottom: 0;
 }
@@ -119,31 +134,32 @@ footer{
   font-weight: 600;
 }
 
-.row{
+.box{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 2% auto;
+  flex-flow: row wrap;
+  margin-bottom: 30px;
 }
 
-.row-2{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 2% auto;
-}
-
-.row .card{
-  height: 150px;
+ .card{
+  height: 188px;
   width: calc(100% / 6 - 21.962px);
   background-color: black;
-
+  margin-right: 15px;
 }
 
-.row-2 .card{
-  height: 150px;
-  width: calc(100% / 6 - 21.962px);
-  background-color: black;
-  margin-left: 19px;
-  margin-top: 10px;
+.title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
+.title h2{
+  color: white;
+  font-weight: 700;
+}
+
+.title p{
+  color: darkgrey;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
