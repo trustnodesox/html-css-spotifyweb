@@ -53,34 +53,58 @@ aside{
   overflow-y: auto;
 }
 
+aside *{
+  margin-left: 5px;
+}
+
 aside img{
   width: 130px;
   padding: 10px;
 }
 
 aside ul{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
   padding-inline-start: 0;
-  padding: 10px;
   margin-bottom: 0;
   list-style: none;
 }
 
 aside ul li{
-  padding: 5px;
+line-height: 2;
 }
 
 aside ul li a{
   color: darkgrey;
 }
 
+.side-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-menu li{
+  line-height: 2.5;
+}
+
+.side-menu i{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
 aside h4{
   text-transform: uppercase;
   font-size: 15px;
   color: white;
-  font-weight: 700;
-  margin: 0;
-  padding-top: 10px;
-  padding-left: 15px;
+  font-weight: 0;
+  padding-top: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 
@@ -97,11 +121,32 @@ a{
 aside hr{
   margin-top: 3px;
   margin-bottom: 3px;
+  margin-right: 10px;
 }
 
 .account{
   margin-top: auto;
   color: darkgrey;
+}
+
+.account i{
+  margin-right: 5px;
+}
+
+.playlist i{
+  font-size: 50px;
+  color: darkgrey;
+}
+
+.playlist .add{
+  display: flex;
+  align-items: center;
+}
+
+
+.playlist h4{
+  margin-left: 10px;
+  line-height: 3;
 }
 
 main{
@@ -129,6 +174,7 @@ section{
 }
 
 .menu{
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -145,7 +191,7 @@ section{
   flex-flow: row wrap;
 }
 
- .card{
+.card{
   width: calc(100% / 6 - 21.962px);
   margin-right: 20px;
 }
@@ -199,10 +245,9 @@ section{
 .w-25{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
   height: 100%;
   width: 25%;
-  background-color: red;
 }
 
 .now-playing{
@@ -211,22 +256,102 @@ section{
   justify-content: space-between;
 }
 
+.np-controls{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: darkgrey;
+}
+
+.np-controls i{
+  padding: 5px;
+}
+
 .w-25 img{
-  height: 30px;
+  height: 50px;
+  margin: 10px;
 }
 
 .w-50{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
   width: 50%;
-  background-color: blue;
+  align-items: center;
 }
 
 .console{
   width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.console i{
+  margin: 10px;
+  color: white;
+}
+
+.console i:hover{
+  cursor: pointer;
+}
+
+.fa-play-circle{
+  font-size: 30px;
+}
+
+.song{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 13px;
+}
+
+.song p{
+  color: darkgrey;
+}
+
+.song p:first-child{
+  color: white;
+}
+
+.volume{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.volume-controls{
+  margin-right: 10px;
+  display: flex;
+    align-items: center;
+}
+
+.volume-controls i{
+  color: white;
+  margin: 10px;
+  justify-content: flex-end;
+}
+
+.progress-bar{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar span{
+  color: white;
+}
+
+
+.progress-bar input{
+  width: 100%;
+  height: 5px;
+  margin: 10px;
+}
+
+.volume-controls input{
+  height: 5px;
 }

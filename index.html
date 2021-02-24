@@ -5,6 +5,7 @@
     <title></title>
     <!-- Latest compiled and minified CSS -->
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">:  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="master.css">
   </head>
   <body>
@@ -13,49 +14,51 @@
         <button type="button" class="btn btn-default my-btn">effettua l'upgrade</button>
 
     </header>
-    <aside class="">
+    <aside class="sidebar">
       <img src="img/logo-esteso.png" alt="">
-      <ul>
+      <ul class="side-menu">
         <li>
-          <a href="#">* Home</a>
+          <a href="#"><i class="fas fa-home"></i>Home</a>
         </li>
         <li>
-          <a href="#">* Cerca</a>
+          <a href="#"><i class="fas fa-search"></i>Cerca</a>
         </li>
         <li>
-          <a href="#">* La tua libreria</a>
+          <a href="#"><i class="fab fa-napster"></i>La tua libreria</a>
         </li>
       </ul>
+      <div class="playlist">
       <h4>Playlist</h4>
-      <ul>
+      <div class="add">
+        <i class="fas fa-plus-square"></i><a href="#">Crea playlist</a>
+      </div>
+       <ul>
         <li>
-          <a href="#">* Home</a>
+          <a href="#">Nome playlist</a>
         </li>
         <li>
-          <a href="#">* Nome playlist</a>
+          <a href="#">Nome playlist</a>
         </li>
         <li>
-          <a href="#">* Nome playlist</a>
+          <a href="#">Nome playlist</a>
         </li>
         <li>
-          <a href="#">* Nome playlist</a>
+          <a href="#">Nome playlist</a>
         </li>
         <li>
-          <a href="#">* Nome playlist</a>
+          <a href="#">Nome playlist</a>
         </li>
         <li>
-          <a href="#">* Nome playlist</a>
-        </li>
-        <li>
-          <a href="#">* Nome playlist</a>
+          <a href="#">Nome playlist</a>
         </li>
       </ul>
+    </div>
       <div class="account">
 
       <ul>
-        <li><a href="#">Installa l'app</a></li>
+        <li><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa l'app</a></li>
         <hr>
-        <li>Lorenzo De Sossi</li>
+        <li><a href="#"><i class="far fa-user-circle"></i>Lorenzo De Sossi</a></li>
       </ul>
     </div>
     </aside>
@@ -194,27 +197,36 @@
       <div class="w-25">
         <div class="now-playing">
           <img src="img/prova-piccola.png" alt="">
-          <p>aa</p>
-          <p>aa</p>
+          <div class="song">
+            <p>Sinister</p>
+            <p><a>Brano nome</a></p>
+          </div>
         </div>
         <div class="np-controls">
-
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
         </div>
       </div>
       <div class="w-50">
         <div class="console">
-
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo"></i>
         </div>
         <div class="progress-bar">
-
+          <span>0:00</span>
+          <input type="range" name="" value="">
+          <span>4:55</span>
         </div>
       </div>
-      <div class="w-25">
-        <div class="volumne-controls">
-
-        </div>
-        <div class="volume">
-
+      <div class="w-25 volume">
+        <div class="volume-controls">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-volume-up"></i>
+          <input type="range" name="" value="">
         </div>
       </div>
     </footer>
