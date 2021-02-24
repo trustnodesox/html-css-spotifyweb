@@ -198,10 +198,21 @@ section{
 
 .w-25{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: 100%;
   width: 25%;
   background-color: red;
+}
+
+.now-playing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.w-25 img{
+  height: 30px;
 }
 
 .w-50{
