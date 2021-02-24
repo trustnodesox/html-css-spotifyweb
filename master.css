@@ -50,6 +50,7 @@ aside{
   left: 0;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 aside img{
@@ -115,6 +116,7 @@ main{
 }
 
 footer{
+  display: flex;
   height: 100px;
   width: 100%;
   background-color: #282828;
@@ -144,7 +146,6 @@ section{
 }
 
  .card{
-  height: 200px;
   width: calc(100% / 6 - 21.962px);
   margin-right: 20px;
 }
@@ -174,6 +175,10 @@ section{
   color: darkgrey;
 }
 
+.artists{
+  border-radius: 50%;
+}
+
 .title{
   margin-top: 30px;
   margin-bottom: 30px;
@@ -189,4 +194,28 @@ section{
   font-weight: 700;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.w-25{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 25%;
+  background-color: red;
+}
+
+.w-50{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+}
+
+.console{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
