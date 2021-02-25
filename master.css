@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
 .container{
   margin: 0 2% auto;
 }
@@ -73,7 +77,8 @@ aside ul{
 }
 
 aside ul li{
-line-height: 2;
+  line-height: 2.5;
+  font-size: 12px;
 }
 
 aside ul li a{
@@ -133,6 +138,10 @@ aside hr{
   margin-right: 5px;
 }
 
+.playlist{
+  min-height: 50%;
+}
+
 .playlist i{
   font-size: 50px;
   color: darkgrey;
@@ -162,6 +171,7 @@ main{
 
 footer{
   display: flex;
+  justify-content: space-between;
   height: 100px;
   width: 100%;
   background-color: #282828;
@@ -174,9 +184,9 @@ section{
 }
 
 .menu{
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
+  padding-top: 10px;
+  font-size: 10px;
+  text-align: center;
 }
 
 .menu ul li{
@@ -184,6 +194,10 @@ section{
   padding: 10px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.menu ul li:hover{
+  text-decoration: underline;
 }
 
 .box{
@@ -267,6 +281,11 @@ section{
   padding: 5px;
 }
 
+.np-controls i:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .w-25 img{
   height: 50px;
   margin: 10px;
@@ -334,6 +353,10 @@ section{
   justify-content: flex-end;
 }
 
+.volume-controls i:hover{
+  cursor: pointer;
+}
+
 .progress-bar{
   width: 50%;
   display: flex;
@@ -354,4 +377,183 @@ section{
 
 .volume-controls input{
   height: 5px;
+}
+
+.hover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hover .fa-play-circle{
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.hover:hover img{
+  filter: opacity(50%);
+
+}
+
+.artists .hover{
+  border-radius: 50%;
+}
+
+ .hover:hover .fa-play-circle{
+   display: block;
+   cursor: pointer;
+ }
+
+#mobile{
+  display: none;
+}
+
+@media all and (max-width: 992px) {
+  .container .card {
+    width: calc(100% / 4 - 21.962px);
+  }
+}
+
+
+@media all and (max-width: 480px){
+
+
+  .container .card{
+    width: calc(100% / 2 - 21.962px);
+    margin: 0;
+  }
+  .content{
+    margin: 0;
+  }
+
+  header{
+    width: calc(100% - 30px);
+    left: 30px;
+  }
+
+  main{
+    left: 30px;
+    width: calc(100% - 30px);
+  }
+
+  aside{
+    width: 30px;
+  }
+
+  aside *{
+    margin: 0;
+  }
+  aside ul, aside img, aside .playlist{
+    display: none;
+  }
+
+  .side-menu{
+    display: none;
+  }
+
+  #mobile{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mobile li{
+  line-height: 2;
+  font-size: 20px;
+
+  }
+
+  .box{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .content{
+    flex: 1 0;
+  }
+
+  footer .volume i{
+    display: none ;
+  }
+
+  footer .volume input{
+    width: 100px;
+  }
+
+
+
+  footer .np-controls{
+    display: block;
+    margin-left: 0;
+  }
+
+  footer i{
+    font-size: 10px;
+  }
+
+  footer .fa-play-circle{
+    font-size: 20px;
+  }
+
+  .progress-bar span{
+    font-size: 10px;
+  }
+
+  .progress-bar input{
+    width: 100px;
+  }
+}
+
+
+@media all and (max-width: 650px) and (min-width: 480px){
+  .container .card{
+    width: calc(100% / 2 - 20px);
+  }
+
+  .volume-controls{
+    max-width: 100%;
+    display: block;
+  }
+
+  .volume-controls input{
+
+  }
+
+  .np-controls{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-bar span{
+    font-size: 10px;
+  }
+
+  .progress-bar input{
+    width: 100px;
+  }
+
+  .console .fa-play-circle{
+    font-size: 25px;
+  }
+
+  .console i{
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 650px){
+  .container .card{
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+  }
 }

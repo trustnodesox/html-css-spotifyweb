@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title></title>
     <!-- Latest compiled and minified CSS -->
@@ -18,14 +19,20 @@
       <img src="img/logo-esteso.png" alt="">
       <ul class="side-menu">
         <li>
-          <a href="#"><i class="fas fa-home"></i>Home</a>
+          <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
         </li>
         <li>
-          <a href="#"><i class="fas fa-search"></i>Cerca</a>
+          <a href="#"><i class="fas fa-search"></i><span>Cerca</span></a>
         </li>
         <li>
-          <a href="#"><i class="fab fa-napster"></i>La tua libreria</a>
+          <a href="#"><i class="fab fa-napster"></i><span>La tua libreria</span></a>
         </li>
+      </ul>
+      <ul id="mobile">
+        <li><a><i class="fas fa-home"></i></a></li>
+        <li><a><i class="fas fa-search"></i></a></li>
+        <li><a><i class="fab fa-napster"></i></a></li>
+        <li><a><i class="fas fa-bars"></i></a></li>
       </ul>
       <div class="playlist">
       <h4>Playlist</h4>
@@ -54,11 +61,16 @@
       </ul>
     </div>
       <div class="account">
-
       <ul>
         <li><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa l'app</a></li>
         <hr>
         <li><a href="#"><i class="far fa-user-circle"></i>Lorenzo De Sossi</a></li>
+      </ul>
+    </div>
+
+      <ul id="mobile">
+        <li><a href="#"><i class="far fa-arrow-alt-circle-down"></i></a></li>
+        <li><a href="#"><i class="far fa-user-circle"></i></a></li>
       </ul>
     </div>
     </aside>
@@ -81,55 +93,73 @@
           <div class="box">
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/beatles.jpg" alt="">
+                <i class="far fa-play-circle"></i>
+              </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/ghali.jpg" alt="">
+                <i class="far fa-play-circle"></i>
+              </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/salmo.jpg" alt="">
+                <i class="far fa-play-circle"></i>
+              </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+                  <img src="img/black.jpg" alt="">
+                  <i class="far fa-play-circle"></i>
+                </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/dalla.jpg" alt="">
+                <i class="far fa-play-circle"></i>
+              </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/coez.jpg" alt="">
+                <i class="far fa-play-circle"></i>
+              </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
+                <span>Ipsum</span>
               </div>
             </div>
             </div>
@@ -145,19 +175,23 @@
           <div class="box">
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/drake.jpg" alt="">
+              <i class="far fa-play-circle"></i>
+            </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img src="img/prova.png" alt="">
+                <div class="hover">
+              <img src="img/album-cover.jpg" alt="">
+              <i class="far fa-play-circle"></i>
+            </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
               </div>
             </div>
             </div>
@@ -173,19 +207,23 @@
           <div class="box">
             <div class="card">
               <div class="content">
-              <img class="artists" src="img/prova.png" alt="">
+                <div class="hover">
+              <img class="artists" src="img/bowie.jpg" alt="">
+              <i class="far fa-play-circle"></i>
+            </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
               </div>
             </div>
             </div>
             <div class="card">
               <div class="content">
-              <img class="artists" src="img/prova.png" alt="">
+                <div class="hover">
+              <img class="artists" src="img/lennon.jpeg" alt="">
+              <i class="far fa-play-circle"></i>
+            </div>
               <div class="song-info">
-                <p>dsds</p>
-                <span>dsds</span>
+                <p>Lorem</p>
               </div>
             </div>
             </div>
@@ -223,10 +261,10 @@
       </div>
       <div class="w-25 volume">
         <div class="volume-controls">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-desktop"></i>
-          <i class="fas fa-volume-up"></i>
-          <input type="range" name="" value="">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <input type="range" name="" value="">
         </div>
       </div>
     </footer>
